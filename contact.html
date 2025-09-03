@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Cleaning Agency, Laundry" />
+    <meta name="description" content="Top Cleaning Agency in Benin City" />
+    <title>Jayoni</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    /></noscript>
+  </head>
+  <body>
+    <nav class="navbar navbar-contact">
+      <div class="nav-bar-row">
+        <div class="nav-left">
+          <a href="index.html" class="nav-logo-link">
+            <img src="images/website-logo2.png" alt="Logo" class="nav-logo" />
+          </a>
+          <a href="index.html" class="nav-title">JAYONI CLEANING SERVICES</a>
+        </div>
+
+        <div class="nav-right">
+          <a href="index.html" class="home">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="book-service.html">BOOK A SERVICE</a>
+          <a href="contact.html">CONTACT US</a>
+        </div>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="mobile-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="book-service.html">BOOK A SERVICE</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <section class="contact-section">
+      <h2>Get in <strong>Touch</strong></h2>
+      <p>Contact us today for more information</p>
+    </section>
+
+    <section class="contact-box">
+      <div class="form-wrapper contact-form-wrapper">
+        <h3>Contact Us</h3>
+        <form
+          action="https://formsubmit.co/jayonicleaningservices@gmail.com"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Honeypot anti-spam field (invisible to humans) -->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!-- Redirect on success -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://andrewolajide.github.io/jayoni/success.html"
+          />
+
+          <!-- Redirect on error -->
+          <input
+            type="hidden"
+            name="_error"
+            value="https://andrewolajide.github.io/jayoni/error.html"
+          />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name*</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="privacy" required />
+            <label for="privacy">
+              I Agree to <a href="privacy.html">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+
+        <h3>Phone:</h3>
+
+        <a href="tel:+234 813 706 0256">
+          <i class="fa-solid fa-phone"></i>
+          <span>+234 813 706 0256</span></a
+        >
+        <h3>Email:</h3>
+        <a href="mailto:jayonicleaningservices@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>jayonicleaningservices@gmail.com</span>
+        </a>
+
+        <h3>Location/Service Area</h3>
+        <p>Benin City, Edo State</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-columns">
+          <div class="footer-left">
+            <h3>Jayoni<br />Cleaning Services</h3>
+            <p>Eradicating dirt with a merry touch</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/share/1B5ZBLmwFu/"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/jayoni_cleaning_services?igsh=cW56czR2MjdmMDA0"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-center">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="book-service.html">Book A Service</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="footer-right">
+            <h3>Contact Info</h3>
+            <a href="tel:+234 813 706 0256">
+              <i class="fa-solid fa-phone"></i>
+              <span>+234 813 706 0256</span></a
+            >
+            <a href="mailto:jayonicleaningservices@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>jayonicleaningservices@gmail.com</span>
+            </a>
+            <p><strong>Serving Benin City with excellence</strong></p>
+          </div>
+        </div>
+        <p class="footer-copy">
+          © 2025 Jayoni Cleaning Services. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      /* mobile menu toggle left as you had it */
+      function toggleMenu(el) {
+        const menu = document.querySelector(".mobile-menu");
+        el.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+
+      document.addEventListener("click", function (event) {
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".mobile-menu");
+
+        if (
+          hamburger &&
+          menu &&
+          !hamburger.contains(event.target) &&
+          !menu.contains(event.target) &&
+          hamburger.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          menu.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
