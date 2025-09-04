@@ -94,7 +94,7 @@ body {
 
 .navbar-contact {
     background-color: #F0F0F0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
@@ -190,6 +190,15 @@ body {
   background-color: #333;
 }
 
+/* Default hamburger in contact page */
+.navbar-contact .hamburger span {
+  background: #108ACB; /* make bars blue */
+}
+/* When active (menu open) → turn into white X */
+.navbar-contact .hamburger.active span {
+  background: #fff; /* make bars white */
+}
+
 .hero-section {
     position: relative;
     width: 100%;
@@ -237,6 +246,9 @@ h1 {
     font-weight: 600;
     font-size: 20px;
     margin-top: 1rem;
+    cursor: pointer;
+  animation: pop 1.5s ease-in-out infinite; /* looping pop */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero-section button:hover {
@@ -246,9 +258,22 @@ h1 {
     border: 2px solid #00E9DF;
 }
 
+@keyframes pop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* slightly bigger */
+  }
+}
+
 .welcome-section {
-    display: flex;
     padding: 3rem 6rem;
+}
+
+.welcome-flex {
+    display: flex;
+    flex-direction: row;
     gap: 3rem;
 }
 
@@ -270,22 +295,29 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.welcome-section .mobile {
+    display: none;
+}
+
 .welcome-section button {
-    background-color: #00E9DF;
-    border: 2px solid black;
+   background-color: #108ACB;
+    color: White;
     border-radius: 30px;
     padding: 5px 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 20px;
     margin-top: 1rem;
+    border: 2px solid #00E9DF;
+    cursor: pointer;
 }
 
 .welcome-section button:hover {
-    background-color: #108ACB;
-    color: White;
+     background-color: #00E9DF;
+    border: 2px solid black;
+    color: black;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 2px solid #00E9DF;
+    
 }
 
 .services {
@@ -607,6 +639,9 @@ details[open] summary::after {
         margin: 0 auto;
         margin-bottom: 4rem;
         margin-top: 1rem;
+        cursor: pointer;
+        animation: pop 1.5s ease-in-out infinite; /* looping pop */
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .about-button:hover {
@@ -681,6 +716,19 @@ details[open] summary::after {
     .contact-box i {
         font-size: 24px;
         color: #333;
+         display: inline-flex;  
+    margin-right: 0.5rem;
+     background: #108ACB;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
        
     }
 
@@ -699,8 +747,8 @@ details[open] summary::after {
   height: 650px;
 }
 
-.contact-form-wrapper, .form-group label {
- font-size: 1.1rem;
+.contact-form-wrapper .form-group label {
+ font-size: 1.2rem;
 }
 
 .form-wrapper {
@@ -710,7 +758,7 @@ details[open] summary::after {
   max-width: 1000px;
   margin: auto;
   margin-bottom: 4rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -750,7 +798,7 @@ details[open] summary::after {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   padding: 0.6rem;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 5px;
   background: transparent;
   color: #000;
@@ -968,10 +1016,6 @@ background: #00E9DF;
         display: none;
     }
 
-    .navbar-contact .hamburger span {
-       background: #00E9DF;
-    }
-
     .hamburger {
         display: flex;
     }
@@ -1001,9 +1045,22 @@ background: #00E9DF;
     }
     
     .welcome-section {
-        flex-direction: column-reverse;
         padding: 3rem 2.5rem;
         height: auto;
+    }
+
+.welcome-section .mobile {
+    display: block;
+}
+
+
+.welcome-section .desktop {
+    display: none;
+}
+
+
+    .welcome-flex {
+        flex-direction: column-reverse;
         gap: 1.5rem;
     }
 
@@ -1011,6 +1068,7 @@ background: #00E9DF;
         width: 100%;
         height: 320px;
         flex: none;
+        margin-top: 1rem;
     }
 
     .welcome-text {
@@ -1038,11 +1096,20 @@ background: #00E9DF;
         padding: 0 5rem;
         height: 600px;
     }
+
     .services-row {
-        gap: 2rem;
+         gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start;
+        padding: 3rem calc((100% - 300px) / 2); /* 3rem top, auto side padding */
     }
 
     .service-box {
+       flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
         width: 300px;
         height: 400px;
         line-height: 1rem;
@@ -1078,6 +1145,8 @@ background: #00E9DF;
     }
 
     .testimonial-box {
+        flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
         width: 300px;
         height: 400px;
     }
@@ -1098,7 +1167,14 @@ background: #00E9DF;
         height: 600px;
     }
     .testimonial-row {
-        gap: 2rem;
+        margin-top: 3rem;
+         gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start;
+        padding: 3rem calc((100% - 300px) / 2); /* 3rem top, auto side padding */
     }
 
 
@@ -1190,7 +1266,12 @@ background: #00E9DF;
 
 .contact-box p,.contact-box a, .contact-box i {
     font-size: 16px;}
-    
+  
+.contact-box i {
+    width: 30px;
+    height: 30px;
+    }
+
     .contact-section h2 {
         font-size: 24px;
         margin-bottom: 1rem;
@@ -1204,6 +1285,14 @@ background: #00E9DF;
 .contact-form-wrapper {
   height: auto;
   width: 100%;
+}
+
+.contact-form-wrapper .form-group label {
+ font-size: 1rem;
+}
+
+.form-check label {
+ font-size: 1rem;
 }
 
 .contact-info{
