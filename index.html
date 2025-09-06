@@ -63,7 +63,7 @@
     <section class="hero-section">
       <img src="images/hero-img.png" alt="Hero image" class="hero-img" />
       <div class="hero-text">
-        <h1>Professional<br />Cleaning Services</h1>
+        <h1 id="hero-heading">Professional<br />Cleaning Services</h1>
         <p>Eradicating dirt with a merry touch</p>
         <a href="book-service.html"
           ><button class="hero-button">BOOK NOW</button></a
@@ -389,6 +389,32 @@
           menu.classList.remove("active");
         }
       });
+
+      // Rotating text for hero heading
+      const texts = [
+        "Professional<br>Cleaning Services",
+        "Jayoni<br>Cleaning Services",
+        "Serving Benin<br>City with Excellence",
+      ];
+
+      let count = 0;
+      const heading = document.getElementById("hero-heading");
+
+      setInterval(() => {
+        // trigger fade animation
+        heading.classList.add("fade-change");
+
+        // change text at fade-out point (after 1s)
+        setTimeout(() => {
+          count = (count + 1) % texts.length;
+          heading.innerHTML = texts[count]; // ✅ innerHTML preserves <br>
+        }, 1000);
+
+        // remove class after full animation so it can be reapplied
+        setTimeout(() => {
+          heading.classList.remove("fade-change");
+        }, 2000);
+      }, 3000); // cycle every 5s (2s fade + 3s visible)
     </script>
   </body>
 </html>
