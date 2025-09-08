@@ -1467,3 +1467,1796 @@ background: #00E9DF;
         text-align: left;
     }
 }
+
+
+@media (min-width: 601px) and (max-width: 700px) {
+.navbar {
+        padding: 0 3rem;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-title {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hero-text {
+        padding: 0 3rem;
+        text-align: left;
+    }
+    .hero-section h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+    
+    .hero-section button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    
+    .welcome-section {
+        padding: 3rem 2.5rem;
+        height: auto;
+    }
+
+.welcome-section .mobile {
+    display: block;
+}
+
+
+.welcome-section .desktop {
+    display: none;
+}
+
+
+    .welcome-flex {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .welcome-img {
+        width: 90%;
+        height: 350px;
+        flex: none;
+        margin: 1rem auto; /* centers the image horizontally */
+    }
+
+    .welcome-text {
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    .welcome-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .welcome-section button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .gallery-pics {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .gallery-img {
+        width: 90%;
+        height: 430px;
+    }
+
+    .gallery-videos {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    video {
+        width: 90%;
+        height: 430px;
+    }
+
+    .services {
+        padding: 0 5rem;
+        height: 600px;
+    }
+
+    .services-row {
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 1rem;  
+    }
+
+    .service-box {
+       flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 400px;
+        line-height: 1rem;
+    }
+
+    .service-box p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    .service-box h3 {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .services-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 0;
+        }
+
+    .testimonials-section {
+        padding: 0 5rem;
+        height: 750px;
+    }
+
+    .testimonials-section .scroll-btn {
+        display: block; /* show scroll buttons on mobile */
+    }
+
+    .testimonial-box {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 520px;
+        justify-content: center;
+    }
+
+    .testimonials-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .testimonial-box p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .testimonial-box h3 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    .testimonial-img {
+        height: 750px;
+    }
+    .testimonial-row {
+        margin-top: 3rem;
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 1rem;  
+    }
+
+
+    .faq {
+        padding: 2rem 2.5rem;
+    }
+    .faq h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+    summary {
+        font-size: 16px;
+    }
+    details p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .head h2 {
+        font-size: 28px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+
+.about-img {
+        width: 80%;
+        height: 360px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 1rem;
+    }
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .about-button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+
+.form-row {
+  flex-direction: column;
+  
+}
+
+.book-head h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .book-head p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-section {
+        padding: 3rem 2.5rem;
+    }
+
+    .contact-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2.5rem;
+    }
+
+.contact-box h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-box h3{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.contact-box p,.contact-box a, .contact-box i {
+    font-size: 16px;}
+  
+.contact-box i {
+    width: 30px;
+    height: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-form-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.contact-form-wrapper .form-group label {
+ font-size: 1rem;
+}
+
+.form-check label {
+ font-size: 1rem;
+}
+
+.contact-info{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+   .form-wrapper h2 {
+        font-size: 24px;
+    }
+    
+.form-wrapper {
+        padding: 1rem 2rem;
+        margin: 2rem 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 0.6rem 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .privacy {
+  padding: 5% 2rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.privacy h2,
+.privacy h3 {
+  line-height: 5rem;
+}
+
+.privacy h2 {
+  font-size: 1.5rem;
+}
+
+.privacy h3 {
+  font-size: 1.2rem;
+}
+
+.privacy p {
+  font-size:medium;
+}
+
+.privacy ul {
+  padding: 0 3rem;
+  padding-top: 2rem;
+  font-size: medium;
+}
+
+    .site-footer {
+        padding: 2rem 2.5rem;
+        text-align: left;
+    }
+
+    .site-footer h3 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .site-footer p, .site-footer a {
+        font-size: 0.9rem;
+    }
+
+    .site-footer i {
+    margin-right: 0.2rem;
+}
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-left, .footer-center, .footer-right {
+        text-align: left;
+    }    
+}
+
+
+@media (min-width: 701px) and (max-width: 800px) {
+.navbar {
+        padding: 0 3rem;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-title {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hero-text {
+        padding: 0 3rem;
+        text-align: left;
+    }
+    .hero-section h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+    
+    .hero-section button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    
+    .welcome-section {
+        padding: 3rem 2.5rem;
+        height: auto;
+    }
+
+.welcome-section .mobile {
+    display: block;
+}
+
+
+.welcome-section .desktop {
+    display: none;
+}
+
+
+    .welcome-flex {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .welcome-img {
+        width: 70%;
+        height: 350px;
+        flex: none;
+         margin: 1rem auto; /* centers the image horizontally */
+    }
+
+    .welcome-text {
+        text-align: left;
+        padding: 1rem 10%;
+    }
+
+    .welcome-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .welcome-section button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .gallery-pics {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .gallery-img {
+        width: 80%;
+        height: 450px;
+    }
+
+    .gallery-videos {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    video {
+        width: 80%;
+        height: 450px;
+    }
+
+    .services {
+        padding: 0 5rem;
+        height: 600px;
+    }
+
+    .services-row {
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 1rem;
+    }
+
+    .service-box {
+       flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 400px;
+        line-height: 1rem;
+    }
+
+    .service-box p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    .service-box h3 {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .services-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 0;
+        }
+
+    .testimonials-section {
+        padding: 0 5rem;
+        height: 750px;
+    }
+
+    .testimonials-section .scroll-btn {
+        display: block; /* show scroll buttons on mobile */
+    }
+
+    .testimonial-box {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 520px;
+        justify-content: center;
+    }
+
+    .testimonials-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .testimonial-box p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .testimonial-box h3 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    .testimonial-img {
+        height: 750px;
+    }
+    .testimonial-row {
+        margin-top: 3rem;
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 1rem; /* ✅ ensures first/last box are centered */
+    }
+
+
+    .faq {
+        padding: 2rem 2.5rem;
+    }
+    .faq h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+    summary {
+        font-size: 16px;
+    }
+    details p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .head h2 {
+        font-size: 28px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+
+.about-img {
+        width: 70%;
+        height: 380px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 1rem;
+    }
+    .about-text p {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .about-button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+
+.form-row {
+  flex-direction: column;
+  
+}
+
+.book-head h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .book-head p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-section {
+        padding: 3rem 2.5rem;
+    }
+
+    .contact-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2.5rem;
+    }
+
+.contact-box h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-box h3{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.contact-box p,.contact-box a, .contact-box i {
+    font-size: 16px;}
+  
+.contact-box i {
+    width: 30px;
+    height: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-form-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.contact-form-wrapper .form-group label {
+ font-size: 1rem;
+}
+
+.form-check label {
+ font-size: 1rem;
+}
+
+.contact-info{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+   .form-wrapper h2 {
+        font-size: 24px;
+    }
+    
+.form-wrapper {
+        padding: 1rem 2rem;
+        margin: 2rem 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 0.6rem 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .privacy {
+  padding: 5% 2rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.privacy h2,
+.privacy h3 {
+  line-height: 5rem;
+}
+
+.privacy h2 {
+  font-size: 1.5rem;
+}
+
+.privacy h3 {
+  font-size: 1.2rem;
+}
+
+.privacy p {
+  font-size:medium;
+}
+
+.privacy ul {
+  padding: 0 3rem;
+  padding-top: 2rem;
+  font-size: medium;
+}
+
+    .site-footer {
+        padding: 2rem 2.5rem;
+        text-align: left;
+    }
+
+    .site-footer h3 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .site-footer p, .site-footer a {
+        font-size: 0.9rem;
+    }
+
+    .site-footer i {
+    margin-right: 0.2rem;
+}
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-left, .footer-center, .footer-right {
+        text-align: left;
+    }   
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .navbar {
+        padding: 0 5rem;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-title {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hero-text {
+        padding: 0 5rem;
+        text-align: left;
+    }
+    .hero-section h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+    
+    .hero-section button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    
+    .welcome-section {
+        padding: 3rem 5rem;
+        height: auto;
+    }
+
+.welcome-section .mobile {
+    display: block;
+}
+
+
+.welcome-section .desktop {
+    display: none;
+}
+
+
+    .welcome-flex {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .welcome-img {
+        width: 70%;
+        height: 350px;
+        flex: none;
+         margin: 1rem auto; /* centers the image horizontally */
+    }
+
+    .welcome-text {
+        text-align: left;
+        padding: 1rem 0;
+    }
+
+    .welcome-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .welcome-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .welcome-section button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .gallery-pics {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .gallery-img {
+        width: 80%;
+        height: 450px;
+    }
+
+    .gallery-videos {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    video {
+        width: 80%;
+        height: 450px;
+    }
+
+    .services {
+        padding: 0 5rem;
+        height: 600px;
+    }
+
+    .services-row {
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 2rem;
+    }
+
+    .service-box {
+       flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 400px;
+        line-height: 1rem;
+    }
+
+    .service-box p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    .service-box h3 {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .services-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 0;
+        }
+
+    .testimonials-section {
+        padding: 0 5rem;
+        height: 750px;
+    }
+
+    .testimonials-section .scroll-btn {
+        display: block; /* show scroll buttons on mobile */
+    }
+
+    .testimonial-box {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 520px;
+        justify-content: center;
+    }
+
+    .testimonials-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .testimonial-box p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .testimonial-box h3 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    .testimonial-img {
+        height: 750px;
+    }
+    .testimonial-row {
+        margin-top: 3rem;
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 2rem; /* ✅ ensures first/last box are centered */
+    }
+
+
+    .faq {
+        padding: 2rem 4rem;
+    }
+    .faq h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+    summary {
+        font-size: 16px;
+    }
+    details p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+    .head h2 {
+        font-size: 28px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+
+.about-img {
+        width: 70%;
+        height: 420px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 1rem;
+    }
+    .about-text p {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .about-button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+
+.form-row {
+  flex-direction: column;
+  
+}
+
+.book-head h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .book-head p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-section {
+        padding: 3rem 2.5rem;
+    }
+
+    .contact-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem;
+    }
+
+.contact-box h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-box h3{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.contact-box p,.contact-box a, .contact-box i {
+    font-size: 18px;}
+  
+.contact-box i {
+    width: 30px;
+    height: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-form-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.contact-form-wrapper .form-group label {
+ font-size: 18px;
+}
+
+.form-check label {
+ font-size: 1rem;
+}
+
+.contact-info{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+   .form-wrapper h2 {
+        font-size: 24px;
+    }
+    
+.form-wrapper {
+        padding: 2rem 2rem;
+        margin: 2rem 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 0.6rem 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .privacy {
+  padding: 5% 4rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.privacy h2,
+.privacy h3 {
+  line-height: 5rem;
+}
+
+.privacy h2 {
+  font-size: 1.5rem;
+}
+
+.privacy h3 {
+  font-size: 1.2rem;
+}
+
+.privacy p {
+  font-size:medium;
+}
+
+.privacy ul {
+  padding: 0 3rem;
+  padding-top: 2rem;
+  font-size: medium;
+}
+
+    .site-footer {
+        padding: 2rem 4rem;
+        text-align: left;
+    }
+
+    .site-footer h3 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .site-footer p, .site-footer a {
+        font-size: 0.9rem;
+    }
+
+    .site-footer i {
+    margin-right: 0.2rem;
+}
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-left, .footer-center, .footer-right {
+        text-align: left;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1060px) {
+    .navbar {
+        padding: 0 5rem;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-title {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hero-text {
+        padding: 0 5rem;
+        text-align: left;
+    }
+    .hero-section h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+    
+    .hero-section button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    
+    .welcome-section {
+        padding: 3rem 5rem;
+        height: auto;
+    }
+
+.welcome-section .mobile {
+    display: block;
+}
+
+
+.welcome-section .desktop {
+    display: none;
+}
+
+ .welcome-flex {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .welcome-img {
+        width: 70%;
+        height: 350px;
+        flex: none;
+         margin: 1rem auto; /* centers the image horizontally */
+    }
+
+    .welcome-text {
+        text-align: left;
+        padding: 1rem 5rem;
+    }
+
+     .welcome-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .welcome-section p {
+        font-size: 18px;
+        line-height: 1.8rem;
+    }
+
+    .welcome-section button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+     .gallery-pics {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .gallery-img {
+        width: 80%;
+        height: 450px;
+    }
+
+    .gallery-videos {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    video {
+        width: 80%;
+        height: 450px;
+    }
+
+    .services {
+        padding: 0 5rem;
+        height: 600px;
+    }
+
+    .services-row {
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 2rem;
+    }
+
+    .service-box {
+       flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 400px;
+        line-height: 1rem;
+    }
+
+    .service-box p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    .service-box h3 {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .services-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 0;
+        }
+
+    .testimonials-section {
+        padding: 0 5rem;
+        height: 750px;
+    }
+
+    .testimonials-section .scroll-btn {
+        display: block; /* show scroll buttons on mobile */
+    }
+
+    .testimonial-box {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 520px;
+        justify-content: center;
+    }
+
+    .testimonials-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .testimonial-box p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .testimonial-box h3 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    .testimonial-img {
+        height: 750px;
+    }
+    .testimonial-row {
+        margin-top: 3rem;
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 2rem; /* ✅ ensures first/last box are centered */
+    }
+
+
+    .faq {
+        padding: 2rem 4rem;
+    }
+    .faq h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+    summary {
+        font-size: 16px;
+    }
+    details p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    
+    .head h2 {
+        font-size: 30px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+    }
+    .about h2 {
+        font-size: 24px;
+    }
+
+.about-img {
+        width: 70%;
+        height: 420px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 1rem;
+    }
+    .about-text p {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .about-button {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+
+.form-row {
+  flex-direction: column;
+  
+}
+
+.book-head h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .book-head p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-section {
+        padding: 3rem 2.5rem;
+    }
+
+    .contact-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem;
+    }
+
+.contact-box h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-box h3{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.contact-box p,.contact-box a, .contact-box i {
+    font-size: 18px;}
+  
+.contact-box i {
+    width: 30px;
+    height: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-form-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.contact-form-wrapper .form-group label {
+ font-size: 18px;
+}
+
+.form-check label {
+ font-size: 1rem;
+}
+
+.contact-info{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+   .form-wrapper h2 {
+        font-size: 24px;
+    }
+    
+.form-wrapper {
+        padding: 2rem 2rem;
+        margin: 2rem 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 0.6rem 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .privacy {
+  padding: 5% 4rem;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.privacy h2,
+.privacy h3 {
+  line-height: 5rem;
+}
+
+.privacy h2 {
+  font-size: 1.5rem;
+}
+
+.privacy h3 {
+  font-size: 1.2rem;
+}
+
+.privacy p {
+  font-size:medium;
+}
+
+.privacy ul {
+  padding: 0 3rem;
+  padding-top: 2rem;
+  font-size: medium;
+}
+}
+
+@media (min-width: 1061px) and (max-width: 1120px) {
+ .navbar {
+        padding: 0 5rem;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-title {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu li a {
+    font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 24px;
+    }
+
+    .hero-section h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .welcome-img {
+    height: 400px;
+    width: 450px;
+    flex: 1;
+    object-fit: cover;
+}
+
+.welcome-section h2 {
+    color: #108ACB;
+    line-height: 2,5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+.services-row {
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 2rem;
+    }
+
+    .service-box {
+        display: flex;
+        flex-direction: column;
+       flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 450px;
+        line-height: 1rem;
+        justify-content: center;
+    }
+
+    .service-box p {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    .service-box h3 {
+        font-size: 22px;
+        line-height: 1.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .services-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 0;
+        }
+
+    .testimonials-section {
+        padding: 0 5rem;
+        height: 750px;
+    }
+
+    .testimonials-section .scroll-btn {
+        display: block; /* show scroll buttons on mobile */
+    }
+
+    .testimonial-box {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;  /* match your card width in mobile */
+        scroll-snap-align: center;       /* ✅ center each box on scroll */
+        width: 300px;
+        height: 520px;
+        justify-content: center;
+    }
+
+    .testimonials-section h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+    .testimonial-box p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+    .testimonial-box h3 {
+        font-size: 22px;
+        line-height: 2rem;
+    }
+    .testimonial-img {
+        height: 750px;
+    }
+    .testimonial-row {
+        margin-top: 3rem;
+        gap: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        justify-content: flex-start; /* let items flow naturally */
+        padding: 3rem 2rem; /* ✅ ensures first/last box are centered */
+    }
+
+
+    .faq {
+        padding: 2rem 4rem;
+    }
+    .faq h2 {
+        font-size: 28px;
+        line-height: 2.5rem;
+    }
+
+    details {
+        padding: 0.8rem;
+    }
+    summary {
+        font-size: 16px;
+    }
+    details p {
+        font-size: 18px;
+        line-height: 1.8rem;
+    }
+    .head h2 {
+        font-size: 30px;
+    }
+
+.contact-section {
+        padding: 3rem 2.5rem;
+    }
+
+    .contact-box {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem;
+    }
+
+.contact-box h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-box h3{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.contact-box p,.contact-box a, .contact-box i {
+    font-size: 18px;}
+  
+.contact-box i {
+    width: 30px;
+    height: 30px;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        line-height: 1.8rem;
+    }
+
+.contact-form-wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.contact-form-wrapper .form-group label {
+ font-size: 18px;
+}
+
+.contact-info{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+}
